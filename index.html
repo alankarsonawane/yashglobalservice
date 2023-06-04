@@ -4,23 +4,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Javascript tutorial</title>
-  <link rel="stylesheet" type="text/css" href="demo.css">
+  <title>YashglobalSolutions</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   
   <style>
-    h2{
-      color:Red;
-      padding-bottom:10px;
-      border-bottom: 2px solid black;
-    }
+ 
+ body{
+   margin:0px;
+   padding:0px;
+ }
+ .wrapper{
+   width:100%;
+   height:50px;
+   background-color: black;
+   color:white
+   margin-bottom:50px;
+   border-bottom:2px solid black;
+   position:fixed;
+ }   
+ .wrapper i{
+   font-size:35px;
+   float: left;
+   margin-top:10px;
+   color:white;
+ }
+  
+  .wrapper h2{
+    font-size:20px;
+    position:absolute;
+    top:0px;
+    left:50px;
+    color:white;
+  }
+  
+  
+  .ads{
+    width:100%;
+    height:280px;
+    background-image:url('images/bg1.jpg');
+   background-repeat:no-repeat;
+  background-size:100% 100%;
+  animation:slider 15s infinite linear;
+  display:flex;
+  align-items: flex-end;
+  justify-content:center; 
+
+  }
+  
+  @keyframes slider{
+    0%{background-image: url('images/bg2.jpg')}
+    25%{background-image: url('images/bg3.jpg')}
+    50%{background-image: url('images/bg4.jpg')}
+    75%{background-image: url('images/bg5.jpg')}
+  }
+  
+  
+  .ads h3{
+    width:200px;
+    padding:10px;
+    border:2px solid white;
+    color:white;
+    font-weight:bolder;
+  }
+  .Services{
+    width:100%;
+    height:2100px;
+    border-bottom:2px solid black;
+  }
+  
+  .Services h2{
+    color:maroon;
+  }
+  
+  .AboutUs{
+    width:100%;
+    height: 440px;
+    border-bottom:2px solid black;
+    
+  }
+  
+  .AboutUs h2{
+    color:maroon;
+  }
+  
+  .AboutUs h4 {
+    color:green;
+    font-size:40px;
+  }
+  
+  .AboutUs p{
+    color:brown;
+    font-weight:bold;
+    font-size: 15px;
+  }
+  
+  .followUs{
+    width:100%;
+    height:200px;
+    background-color: lightblue;
+  }
+  
+  .dreamJob{
+    width: 100%
+    height:200px;
+    background-color:orange;
+  }
+  
+  .footer{
+    width:100%;
+    height:150px;
+background-color: black;
+  }
   </style>
   
 </head>
 
 <body>
-<center>
-  <h2>Yash Global service</h2>
-</center>
+  <div class="wrapper">
+    <i class="fa fa-bars" id="bars" onclick="showBar()" ></i>
+    <h2>YASH GLOBAL CONSULTANTS</h2>
+  </div>
+  <div class="ads">
+    <h3>Get your Dream Job</h3>
+  </div>
+  <div class="Services">
+    <center>
+      <h2>Services</h2>
+      <br>
+      <img src="images/housekeeping.jpg" width="200px" height="250px"><br>
+      <h3>Housekeeping</h3>
+      <br>
+      <img src="images/hotelstaff.jpg" width="200px" height="250px"><br>
+      <h3>Hotel staff</h3>
+      <br>
+      <img src="images/bg5.jpg" width="200px" height="250px"><br>
+      <h3>Nursing staff</h3>
+      <br>
+      <img src="images/dataoperator.jpg" width="200px" height="250px"><br>
+      <h3>Data Entry operator</h3>
+      <br>
+      <img src="images/bg4.jpg" width="200px" height="250px"><br>
+      <h3>Courier Boy</h3>
+      <br>
+      <img src="images/accounts.jpg" width="200px" height="250px"><br>
+      <h3>Accountant</h3>
+      
+    </center>
+  </div>
+  <div class="AboutUs">
+    <center>
+    <h2>About us</h2>
+    
+    <h3>Yash Global Consultants</h3><p> is a Manpower providing pvt company.</p>
+    <p>It is owmned and runned By Mr Yash  shinde (Managing Director)</p>
+    <h1>We understand your needs and Standards</h1>
+    <h4>100%</h4>
+    <h2>Job Guarantee</h2>
+    </center>
+  </div>
+  <div class="followUs">
+follow us    
+  </div>
+  <div class="dreamJob">
+    Dream job form
+  </div>
+  <div class="footer">
+    footer
+  </div>
 </body>
 
 </html>
